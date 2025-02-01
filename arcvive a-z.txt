@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Z - My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aia.html">AIA</a></li>
+                <li><a href="a-z.html" class="active">A-Z</a></li>
+                <li><a href="cheatsheets.html">Cheatsheets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>A-Z PDFs</h1>
+        <div class="pdf-container">
+            <div class="pdf-grid">
+                <!-- 16 PDF flipcards (4x4 grid) -->
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>A</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="/pdfs/A__Face_Recognition.pdf?height=300&width=200" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for B through P -->
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>B</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="/placeholder.svg?height=300&width=200" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                  <!-- ... (repeat for C through O) ... -->
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>C</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="/placeholder.svg?height=300&width=200" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>D</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="/placeholder.svg?height=300&width=200" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>E</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="/placeholder.svg?height=300&width=200" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>F</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="/placeholder.svg?height=300&width=200" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <!-- ... G to H ... -->
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>G</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="/placeholder.svg?height=300&width=200" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>H</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="/placeholder.svg?height=300&width=200" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>I</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="/placeholder.svg?height=300&width=200" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>J</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="/placeholder.svg?height=300&width=200" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+           <!-- ... K to O ... -->
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>K</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="/placeholder.svg?height=300&width=200" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>L</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="/placeholder.svg?height=300&width=200" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>M</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="/placeholder.svg?height=300&width=200" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>N</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="/placeholder.svg?height=300&width=200" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <!-- ... (repeat for PPPPPP) ... -->
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>O</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="/placeholder.svg?height=300&width=200" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>P</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="/placeholder.svg?height=300&width=200" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           
+                    <div class="pdf-grid">
+                    <!-- 10 empty grey placeholders -->
+                    <div class="flipcard placeholder">
+                        <div class="flipcard-inner">
+                            <div class="flipcard-front">
+                                <p>Q</p>
+                            </div>
+                            <div class="flipcard-back">
+                                <p>Coming Soon</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pdf-grid">
+                        <!-- 10 empty grey placeholders -->
+                        <div class="flipcard placeholder">
+                            <div class="flipcard-inner">
+                                <div class="flipcard-front">
+                                    <p>R</p>
+                                </div>
+                                <div class="flipcard-back">
+                                    <p>Coming Soon</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="pdf-grid">
+                            <!-- 10 empty grey placeholders -->
+                            <div class="flipcard placeholder">
+                                <div class="flipcard-inner">
+                                    <div class="flipcard-front">
+                                        <p>S</p>
+                                    </div>
+                                    <div class="flipcard-back">
+                                        <p>Coming Soon</p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="pdf-grid">
+                                <!-- 10 empty grey placeholders -->
+                                <div class="flipcard placeholder">
+                                    <div class="flipcard-inner">
+                                        <div class="flipcard-front">
+                                            <p>T</p>
+                                        </div>
+                                        <div class="flipcard-back">
+                                            <p>Coming Soon</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="pdf-grid">
+                                    <!-- 10 empty grey placeholders -->
+                                    <div class="flipcard placeholder">
+                                        <div class="flipcard-inner">
+                                            <div class="flipcard-front">
+                                                <p>U</p>
+                                            </div>
+                                            <div class="flipcard-back">
+                                                <p>Coming Soon</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="pdf-grid">
+                                        <!-- 10 empty grey placeholders -->
+                                        <div class="flipcard placeholder">
+                                            <div class="flipcard-inner">
+                                                <div class="flipcard-front">
+                                                    <p>R</p>
+                                                </div>
+                                                <div class="flipcard-back">
+                                                    <p>Coming Soon</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                
+                                        <div class="pdf-grid">
+                                            <!-- 10 empty grey placeholders -->
+                                            <div class="flipcard placeholder">
+                                                <div class="flipcard-inner">
+                                                    <div class="flipcard-front">
+                                                        <p>S</p>
+                                                    </div>
+                                                    <div class="flipcard-back">
+                                                        <p>Coming Soon</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="pdf-grid">
+                                                <!-- 10 empty grey placeholders -->
+                                                <div class="flipcard placeholder">
+                                                    <div class="flipcard-inner">
+                                                        <div class="flipcard-front">
+                                                            <p>T</p>
+                                                        </div>
+                                                        <div class="flipcard-back">
+                                                            <p>Coming Soon</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                
+
+                    <div class="pdf-grid">
+                <!-- 10 empty blanks -->
+                <div class="blank-card"></div>
+                <div class="blank-card"></div>
+                <div class="blank-card"></div>
+                <div class="blank-card"></div>
+                <div class="blank-card"></div>
+                <div class="blank-card"></div>
+                <div class="blank-card"></div>
+                <div class="blank-card"></div>
+                <div class="blank-card"></div>
+                <div class="blank-card"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+   <div class="flipcard placeholder">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>Z</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="flipcard-back">
+                            <div class="pdf-container">
+                                <iframe src="/pdfs/A__Face_Recognition.pdf?height=300&width=200#toolbar=0&navpanes=0&scrollbar=0&view=FitH" frameborder="0"></iframe>
+                                <p class="pdf-fallback">PDF not available. Please try again later.</p>
+                            </div>
+                            <button class="enlarge-btn" data-pdf="/pdfs/A__Face_Recognition.pdf?height=300&width=200">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M15 3h6v6M14 10l6.1-6.1M9 21H3v-6M10 14l-6.1 6.1"/>
+                                </svg>
+                            </button>
+                        </div>
+
+
+
+                        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Z - My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aia.html">AIA</a></li>
+                <li><a href="a-z.html" class="active">A-Z</a></li>
+                <li><a href="cheatsheets.html">Cheatsheets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>A-Z PDFs</h1>
+        <div class="pdf-container">
+            <div class="pdf-grid">
+                <!-- 26 PDF flipcards -->
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>A</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="/pdfs/A__Face_Recognition.pdf?height=300&width=200#toolbar=0&navpanes=0&scrollbar=0" frameborder="0"></iframe>
+                            <button class="enlarge-btn" data-pdf="/pdfs/A__Face_Recognition.pdf?height=300&width=200">View PDF</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for B through Z -->
+                <!-- ... -->
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>Z</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="/placeholder.svg?height=300&width=200#toolbar=0&navpanes=0&scrollbar=0" frameborder="0"></iframe>
+                            <button class="enlarge-btn" data-pdf="/placeholder.svg?height=300&width=200">View PDF</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="pdf-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <iframe id="enlarged-pdf" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>A</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <img src="/pdfs/A__Face_Recognition.pdf?height=300&width=200" alt="FaceRecognition" class="pdf-preview">
+                            <a href="/pdfs/A__Face_Recognition.pdf" class="pdf-link" target="_blank" rel="noopener noreferrer">Open PDF A</a>
+                        </div>
+                    </div>
+                </div>

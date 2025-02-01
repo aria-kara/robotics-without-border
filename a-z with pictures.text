@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Z - My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aia.html">AIA</a></li>
+                <li><a href="a-z.html" class="active">A-Z</a></li>
+                <li><a href="cheatsheets.html">Cheatsheets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>A-Z PDFs</h1>
+        <div class="pdf-container">
+            <div class="pdf-grid">
+                <!-- 26 PDF flipcards -->
+               <!-- First Row A B C D -->
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>A</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="images/a.png" frameborder="0"></iframe>
+                            <button class="enlarge-btn" data-pdf="pdfs/A__Face_Recognition.pdf?height=600&width=400">View PDF</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>B</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="images/b.png" frameborder="0"></iframe>
+                            <button class="enlarge-btn" data-pdf="/pdfs/B__Metal_Detectors.pdf?height=600&width=400">View PDF</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>C</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="images/c.png" frameborder="0"></iframe>
+                            <button class="enlarge-btn" data-pdf="/pdfs/C_.pdf?height=600&width=400">View PDF</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>D</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="images/d.png" frameborder="0"></iframe>
+                            <button class="enlarge-btn" data-pdf="/pdfs/D_.pdf?height=600&width=400">View PDF</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- E and F -->
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>E</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="images/e.png" frameborder="0"></iframe>
+                            <button class="enlarge-btn" data-pdf="/pdfs/E_.pdf?height=600&width=400">View PDF</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>F</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="images/f.png" frameborder="0"></iframe>
+                            <button class="enlarge-btn" data-pdf="/pdfs/F_.pdf?height=600&width=400">View PDF</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- G H I J -->
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>G</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="images/g.png" frameborder="0"></iframe>
+                            <button class="enlarge-btn" data-pdf="/pdfs/G_.pdf?height=600&width=400">View PDF</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>H</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="images/h.png" frameborder="0"></iframe>
+                            <button class="enlarge-btn" data-pdf="/pdfs/H_.pdf?height=600&width=400">View PDF</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>I</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="images/i.png" frameborder="0"></iframe>
+                            <button class="enlarge-btn" data-pdf="/pdfs/I_.pdf?height=600&width=400">View PDF</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>J</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="images/j.png" frameborder="0"></iframe>
+                            <button class="enlarge-btn" data-pdf="/pdfs/J_.pdf?height=600&width=400">View PDF</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- K L M N  -->
+
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>K</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="images/k.png" frameborder="0"></iframe>
+                            <button class="enlarge-btn" data-pdf="/pdfs/K_.pdf?height=600&width=400">View PDF</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>L</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="images/l.png" frameborder="0"></iframe>
+                            <button class="enlarge-btn" data-pdf="/pdfs/L_.pdf?height=600&width=400">View PDF</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>M</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="images/m.png" frameborder="0"></iframe>
+                            <button class="enlarge-btn" data-pdf="/pdfs/M_.pdf?height=600&width=400">View PDF</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>N</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="images/n.png" frameborder="0"></iframe>
+                            <button class="enlarge-btn" data-pdf="/pdfs/N_.pdf?height=600&width=400">View PDF</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- O P -->
+
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>O</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="images/o.png" frameborder="0"></iframe>
+                            <button class="enlarge-btn" data-pdf="/pdfs/O_.pdf?height=600&width=400">View PDF</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>P</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <iframe src="images/p.png" frameborder="0"></iframe>
+                            <button class="enlarge-btn" data-pdf="/pdfs/P_.pdf?height=600&width=400">View PDF</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- bank flashcards -->
+
+                <div class="flipcard placeholder">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>Q</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flipcard placeholder">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>R</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flipcard placeholder">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>S</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flipcard placeholder">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>T</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- other 4  -->
+
+
+                <div class="flipcard placeholder">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>U</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flipcard placeholder">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>V</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flipcard placeholder">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>W</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flipcard placeholder">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>X</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- remaining two -->
+                <div class="flipcard placeholder">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>Y</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flipcard placeholder">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>Z</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flipcard blank">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>Z</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flipcard blank">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>Z</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                </div> <div class="flipcard blank">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>Z</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                </div> <div class="flipcard blank">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>Z</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                </div> <div class="flipcard blank">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>Z</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                </div> <div class="flipcard blank">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>Z</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                </div> <div class="flipcard blank">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>Z</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                </div> <div class="flipcard blank">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>Z</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                </div> <div class="flipcard blank">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <p>Z</p>
+                        </div>
+                        <div class="flipcard-back">
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                </div>
+         
+            </div>
+        </div>
+    </main>
+
+    <div id="pdf-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <iframe id="enlarged-pdf" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+====================================
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-image: url("/placeholder.svg?height=842&width=595");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #333;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+main {
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 2rem auto;
+  border-radius: 10px;
+  max-width: 1400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.pdf-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.pdf-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.blank-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.flipcard {
+  background-color: transparent;
+  width: 250px;
+  height: 375px;
+  perspective: 1000px;
+  margin: 0 auto;
+}
+
+.flipcard.blank {
+  width: 180px;
+  height: 270px;
+}
+
+.flipcard-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flipcard:hover .flipcard-inner {
+  transform: rotateY(180deg);
+}
+
+.flipcard-front,
+.flipcard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.flipcard.blank .flipcard-front,
+.flipcard.blank .flipcard-back {
+  font-size: 3rem;
+}
+
+.flipcard-front {
+  background-color: #f0f0f0;
+}
+
+.flipcard-back {
+  background-color: #fff;
+  transform: rotateY(180deg);
+}
+
+.flipcard-back iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+.enlarge-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  background-color: rgba(52, 152, 219, 0.8);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.enlarge-btn:hover {
+  background-color: rgba(41, 128, 185, 1);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+  height: 80%;
+  position: relative;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#enlarged-pdf {
+  width: 100%;
+  height: calc(100% - 40px);
+  border: none;
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1200px) {
+  .pdf-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .flipcard {
+    width: 200px;
+    height: 300px;
+  }
+
+  .flipcard.blank {
+    width: 150px;
+    height: 225px;
+  }
+
+  .blank-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  main {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .pdf-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .flipcard {
+    width: 150px;
+    height: 225px;
+  }
+
+  .flipcard.blank {
+    width: 120px;
+    height: 180px;
+  }
+
+  .blank-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .flipcard-front,
+  .flipcard-back {
+    font-size: 3rem;
+  }
+
+  .flipcard.blank .flipcard-front,
+  .flipcard.blank .flipcard-back {
+    font-size: 2rem;
+  }
+
+  .enlarge-btn {
+    font-size: 0.8rem;
+  }
+
+  .modal-content {
+    width: 95%;
+    height: 90%;
+    margin: 2% auto;
+  }
+}
+
+

@@ -1,0 +1,399 @@
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-image: url("/placeholder.svg?height=842&width=595");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #333;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+main {
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 2rem auto;
+  border-radius: 10px;
+  max-width: 1400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.pdf-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.pdf-wrapper {
+  width: 100%;
+  height: 0;
+  padding-bottom: 33.33%;
+  position: relative;
+  overflow: hidden;
+}
+
+.pdf-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.pdf-grid {
+  display: grid;
+  gap: 30px;
+  padding: 20px;
+}
+
+.pdf-container:not(.additional-flashcards) .pdf-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.flipcard {
+  background-color: transparent;
+  perspective: 1000px;
+  margin: 0 auto;
+}
+
+.flipcard-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flipcard:hover .flipcard-inner {
+  transform: rotateY(180deg);
+}
+
+.flipcard-front,
+.flipcard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.flipcard-front {
+  background-color: #f0f0f0;
+}
+
+.flipcard-back {
+  background-color: #fff;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.flipcard-back .image-container {
+  width: 100%;
+  height: calc(100% - 60px);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flipcard-back iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.enlarge-btn {
+  position: static;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: rgba(52, 152, 219, 0.8);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.enlarge-btn:hover {
+  background-color: rgba(41, 128, 185, 1);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+  height: 80%;
+  position: relative;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#enlarged-pdf {
+  width: 100%;
+  height: calc(100% - 40px);
+  border: none;
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the A-Z flashcards */
+.pdf-container:not(.additional-flashcards) .flipcard {
+  width: 250px;
+  height: 375px;
+}
+
+.pdf-container:not(.additional-flashcards) .flipcard-front {
+  font-size: 4rem;
+}
+
+/* Styles for the additional flashcards */
+.additional-flashcards {
+  margin-top: 3rem;
+}
+
+.additional-flashcards .pdf-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.additional-flashcards .flipcard {
+  width: 195px;
+  height: 260px;
+  flex: 0 0 calc(20% - 24px);
+  margin-bottom: 30px;
+}
+
+.additional-flashcards .flipcard-front {
+  font-size: 2.6rem;
+}
+
+/* Styles for the AIA page */
+.aia-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.video-container {
+  width: 100%;
+  max-width: 560px;
+  margin-bottom: 2rem;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 315px;
+}
+
+.aia-description {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .pdf-container:not(.additional-flashcards) .pdf-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .pdf-container:not(.additional-flashcards) .flipcard {
+    width: 200px;
+    height: 300px;
+  }
+
+  .additional-flashcards .flipcard {
+    flex: 0 0 calc(25% - 22.5px);
+  }
+}
+
+@media (max-width: 992px) {
+  .additional-flashcards .flipcard {
+    flex: 0 0 calc(33.333% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  main {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .pdf-container:not(.additional-flashcards) .pdf-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .pdf-container:not(.additional-flashcards) .flipcard {
+    width: 150px;
+    height: 225px;
+  }
+
+  .pdf-container:not(.additional-flashcards) .flipcard-front {
+    font-size: 3rem;
+  }
+
+  .additional-flashcards .flipcard {
+    flex: 0 0 calc(50% - 15px);
+    width: 156px;
+    height: 208px;
+  }
+
+  .additional-flashcards .flipcard-front {
+    font-size: 2rem;
+  }
+
+  .enlarge-btn {
+    font-size: 0.8rem;
+  }
+
+  .modal-content {
+    width: 95%;
+    height: 90%;
+    margin: 2% auto;
+  }
+
+  .pdf-wrapper {
+    padding-bottom: 50%;
+  }
+
+  .video-container iframe {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .additional-flashcards .flipcard {
+    flex: 0 0 100%;
+    max-width: 195px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pdf-wrapper {
+    padding-bottom: 75%;
+  }
+
+  .video-container iframe {
+    height: 200px;
+  }
+}
+
