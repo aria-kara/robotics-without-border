@@ -10,6 +10,7 @@ body {
   color: #333;
 }
 
+
 header {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 1rem;
@@ -51,6 +52,19 @@ main {
   border-radius: 10px;
   max-width: 1400px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.pdf-container-drive  {
+  width: 80%;
+  height: 90%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.pdf-container-drive  iframe {
+  width: 100%;
+  height: 100%;
 }
 
 h1,
@@ -396,4 +410,3 @@ footer {
     height: 200px;
   }
 }
-
