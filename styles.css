@@ -295,6 +295,13 @@ footer {
   .additional-flashcards .flipcard {
     flex: 0 0 calc(33.333% - 20px);
   }
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-column {
+    margin-bottom: 2rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -344,6 +351,9 @@ footer {
     height: 90%;
     margin: 2% auto;
   }
+  .social-links li {
+    flex: 1 0 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -353,5 +363,55 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+/* Contact page styles */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.contact-column {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-column h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.contact-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.contact-column a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-column a:hover {
+  color: #2980b9;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.social-links li {
+  flex: 1 0 calc(50% - 0.5rem);
 }
 
