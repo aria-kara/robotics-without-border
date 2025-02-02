@@ -72,14 +72,16 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 2rem 0;
 }
 
 .pdf-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
   padding: 20px;
+}
+
+.pdf-container:not(.additional-flashcards) .pdf-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .flipcard {
@@ -163,6 +165,63 @@ h2 {
   background-color: rgba(41, 128, 185, 1);
 }
 
+/* Styles for blank cards */
+.blank-card .flipcard-front,
+.blank-card .flipcard-back {
+  background-color: #e0e0e0;
+  color: #888;
+}
+
+.blank-card .flipcard-front {
+  font-size: 3rem;
+}
+
+.blank-card .flipcard-back {
+  background-color: #d0d0d0;
+  transform: rotateY(180deg);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blank-card:hover .flipcard-inner {
+  transform: rotateY(180deg);
+}
+
+.blank-card:hover {
+  opacity: 1;
+}
+
+.blank-card:hover .flipcard-front {
+  background-color: #e0e0e0;
+}
+
+/* Styles for the additional flashcards */
+.additional-flashcards {
+  margin-top: 3rem;
+}
+
+.additional-flashcards .pdf-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.additional-flashcards .flipcard {
+  width: 195px;
+  height: 260px;
+  flex: 0 0 calc(20% - 24px);
+  margin-bottom: 30px;
+}
+
+.additional-flashcards .flipcard-front {
+  font-size: 2.6rem;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -216,14 +275,25 @@ footer {
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Responsive styles */
 @media (max-width: 1200px) {
-  .pdf-grid {
+  .pdf-container:not(.additional-flashcards) .pdf-grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
   .flipcard {
     width: 200px;
     height: 300px;
+  }
+
+  .additional-flashcards .flipcard {
+    flex: 0 0 calc(25% - 22.5px);
+  }
+}
+
+@media (max-width: 992px) {
+  .additional-flashcards .flipcard {
+    flex: 0 0 calc(33.333% - 20px);
   }
 }
 
@@ -242,7 +312,7 @@ footer {
     padding: 1rem;
   }
 
-  .pdf-grid {
+  .pdf-container:not(.additional-flashcards) .pdf-grid {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 
@@ -253,6 +323,16 @@ footer {
 
   .flipcard-front {
     font-size: 3rem;
+  }
+
+  .additional-flashcards .flipcard {
+    flex: 0 0 calc(50% - 15px);
+    width: 156px;
+    height: 208px;
+  }
+
+  .additional-flashcards .flipcard-front {
+    font-size: 2rem;
   }
 
   .enlarge-btn {
@@ -267,22 +347,11 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .pdf-grid {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  }
-
-  .flipcard {
-    width: 120px;
-    height: 180px;
-  }
-
-  .flipcard-front {
-    font-size: 2.5rem;
-  }
-
-  .enlarge-btn {
-    font-size: 0.7rem;
-    padding: 3px 8px;
+  .additional-flashcards .flipcard {
+    flex: 0 0 100%;
+    max-width: 195px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
