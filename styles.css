@@ -63,6 +63,17 @@ h1 {
   margin-bottom: 2rem;
 }
 
+h1 .hyperlink-symbol {
+  font-size: 0.7em;
+  vertical-align: super;
+  color: #3498db;
+  margin-left: 5px;
+}
+
+h1:hover .hyperlink-symbol {
+  color: #2980b9;
+}
+
 h2 {
   margin-top: 3rem;
   margin-bottom: 2rem;
