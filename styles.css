@@ -348,93 +348,679 @@ footer {
   flex: 1 0 calc(50% - 0.5rem);
 }
 
+/* Define keyframes for glow animations */
+@keyframes glowPulse1 {
+  0% {
+    box-shadow: 0 0 5px rgba(155, 89, 182, 0.3), 0 0 10px rgba(155, 89, 182, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(155, 89, 182, 0.5), 0 0 20px rgba(155, 89, 182, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(155, 89, 182, 0.3), 0 0 10px rgba(155, 89, 182, 0.2);
+  }
+}
+
+@keyframes glowPulse2 {
+  0% {
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.3), 0 0 10px rgba(231, 76, 60, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(231, 76, 60, 0.5), 0 0 20px rgba(231, 76, 60, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.3), 0 0 10px rgba(231, 76, 60, 0.2);
+  }
+}
+
+@keyframes glowPulse3 {
+  0% {
+    box-shadow: 0 0 5px rgba(46, 204, 113, 0.3), 0 0 10px rgba(46, 204, 113, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(46, 204, 113, 0.5), 0 0 20px rgba(46, 204, 113, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(46, 204, 113, 0.3), 0 0 10px rgba(46, 204, 113, 0.2);
+  }
+}
+
+@keyframes glowPulse4 {
+  0% {
+    box-shadow: 0 0 5px rgba(241, 196, 15, 0.3), 0 0 10px rgba(241, 196, 15, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(241, 196, 15, 0.5), 0 0 20px rgba(241, 196, 15, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(241, 196, 15, 0.3), 0 0 10px rgba(241, 196, 15, 0.2);
+  }
+}
+
+@keyframes glowPulse5 {
+  0% {
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.3), 0 0 10px rgba(26, 188, 156, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(26, 188, 156, 0.5), 0 0 20px rgba(26, 188, 156, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.3), 0 0 10px rgba(26, 188, 156, 0.2);
+  }
+}
+
+@keyframes glowPulse6 {
+  0% {
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3), 0 0 10px rgba(52, 152, 219, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.5), 0 0 20px rgba(52, 152, 219, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3), 0 0 10px rgba(52, 152, 219, 0.2);
+  }
+}
+
+@keyframes glowPulse7 {
+  0% {
+    box-shadow: 0 0 5px rgba(230, 126, 34, 0.3), 0 0 10px rgba(230, 126, 34, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(230, 126, 34, 0.5), 0 0 20px rgba(230, 126, 34, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(230, 126, 34, 0.3), 0 0 10px rgba(230, 126, 34, 0.2);
+  }
+}
+
+/* Quotes Sections Layout */
+.quotes-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* SWOT Layout */
+.swot-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.swot-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 992px) {
+  .swot-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.quotes-section {
+  position: relative;
+  padding: 2rem;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.strengths-section {
+  background-color: rgba(46, 204, 113, 0.1); /* Light green background */
+  border-left: 5px solid #2ecc71; /* Green */
+}
+
+.weaknesses-section {
+  background-color: rgba(231, 76, 60, 0.1); /* Light red background */
+  border-left: 5px solid #e74c3c; /* Red */
+}
+
+.opportunities-section {
+  background-color: rgba(52, 152, 219, 0.1); /* Light blue background */
+  border-left: 5px solid #3498db; /* Blue */
+}
+
+.threats-section {
+  background-color: rgba(243, 156, 18, 0.1); /* Light orange background */
+  border-left: 5px solid #f39c12; /* Yellow/Orange */
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #2c3e50;
+  text-align: left;
+  padding-left: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+.strengths-section .section-title {
+  color: #27ae60; /* Darker green */
+}
+
+.weaknesses-section .section-title {
+  color: #c0392b; /* Darker red */
+}
+
+.opportunities-section .section-title {
+  color: #2980b9; /* Darker blue */
+}
+
+.threats-section .section-title {
+  color: #d35400; /* Darker orange */
+}
+
+.section-divider {
+  position: relative;
+  height: 2px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.divider-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.1), transparent);
+}
+
+/* Drop target container styling */
+.quotes-masonry.drop-target-container {
+  background-color: rgba(52, 152, 219, 0.1);
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.5);
+  border-radius: 15px;
+}
+
+/* Masonry Quote Cards Layout */
+.quotes-masonry {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.quote-card {
+  position: absolute;
+  width: 280px;
+  min-height: 200px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: grab;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.quote-card:active {
+  cursor: grabbing;
+}
+
+.quote-card.dragging {
+  opacity: 0.8;
+  z-index: 1000;
+  transform: scale(1.02);
+}
+
+.quote-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Drop target styling */
+.quote-card.drop-target {
+  box-shadow: 0 0 20px rgba(52, 152, 219, 0.7);
+  transform: scale(1.03);
+  z-index: 5;
+}
+
+/* Color variations with animated glow */
+.quote-card.color-purple {
+  animation: glowPulse1 4s infinite;
+}
+
+.quote-card.color-red {
+  animation: glowPulse2 4s infinite;
+  animation-delay: 0.5s;
+}
+
+.quote-card.color-green {
+  animation: glowPulse3 4s infinite;
+  animation-delay: 1s;
+}
+
+.quote-card.color-yellow {
+  animation: glowPulse4 4s infinite;
+  animation-delay: 1.5s;
+}
+
+.quote-card.color-teal {
+  animation: glowPulse5 4s infinite;
+  animation-delay: 2s;
+}
+
+.quote-card.color-blue {
+  animation: glowPulse6 4s infinite;
+  animation-delay: 2.5s;
+}
+
+.quote-card.color-orange {
+  animation: glowPulse7 4s infinite;
+  animation-delay: 3s;
+}
+
+/* Animated glow element */
+.quote-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+}
+
+.quote-card.color-purple .quote-glow {
+  background-color: #9b59b6; /* Purple */
+}
+
+.quote-card.color-red .quote-glow {
+  background-color: #e74c3c; /* Red */
+}
+
+.quote-card.color-green .quote-glow {
+  background-color: #2ecc71; /* Green */
+}
+
+.quote-card.color-yellow .quote-glow {
+  background-color: #f39c12; /* Yellow */
+}
+
+.quote-card.color-teal .quote-glow {
+  background-color: #1abc9c; /* Teal */
+}
+
+.quote-card.color-blue .quote-glow {
+  background-color: #3498db; /* Blue */
+}
+
+.quote-card.color-orange .quote-glow {
+  background-color: #e67e22; /* Orange */
+}
+
+/* Quotation mark colors */
+.quote-card.color-purple .quote-content::before {
+  color: #9b59b6; /* Purple */
+}
+
+.quote-card.color-red .quote-content::before {
+  color: #e74c3c; /* Red */
+}
+
+.quote-card.color-green .quote-content::before {
+  color: #2ecc71; /* Green */
+}
+
+.quote-card.color-yellow .quote-content::before {
+  color: #f39c12; /* Yellow */
+}
+
+.quote-card.color-teal .quote-content::before {
+  color: #1abc9c; /* Teal */
+}
+
+.quote-card.color-blue .quote-content::before {
+  color: #3498db; /* Blue */
+}
+
+.quote-card.color-orange .quote-content::before {
+  color: #e67e22; /* Orange */
+}
+
+/* Link colors */
+.quote-card.color-purple blockquote a {
+  color: #9b59b6;
+  border-bottom: 1px dashed rgba(155, 89, 182, 0.5);
+}
+
+.quote-card.color-red blockquote a {
+  color: #e74c3c;
+  border-bottom: 1px dashed rgba(231, 76, 60, 0.5);
+}
+
+.quote-card.color-green blockquote a {
+  color: #2ecc71;
+  border-bottom: 1px dashed rgba(46, 204, 113, 0.5);
+}
+
+.quote-card.color-yellow blockquote a {
+  color: #f39c12;
+  border-bottom: 1px dashed rgba(243, 156, 18, 0.5);
+}
+
+.quote-card.color-teal blockquote a {
+  color: #1abc9c;
+  border-bottom: 1px dashed rgba(26, 188, 156, 0.5);
+}
+
+.quote-card.color-blue blockquote a {
+  color: #3498db;
+  border-bottom: 1px dashed rgba(52, 152, 219, 0.5);
+}
+
+.quote-card.color-orange blockquote a {
+  color: #e67e22;
+  border-bottom: 1px dashed rgba(230, 126, 34, 0.5);
+}
+
+/* Researcher info line colors */
+.quote-card.color-purple .researcher-info::before {
+  background-color: #9b59b6; /* Purple */
+}
+
+.quote-card.color-red .researcher-info::before {
+  background-color: #e74c3c; /* Red */
+}
+
+.quote-card.color-green .researcher-info::before {
+  background-color: #2ecc71; /* Green */
+}
+
+.quote-card.color-yellow .researcher-info::before {
+  background-color: #f39c12; /* Yellow/Orange */
+}
+
+.quote-card.color-teal .researcher-info::before {
+  background-color: #1abc9c; /* Teal */
+}
+
+.quote-card.color-blue .researcher-info::before {
+  background-color: #3498db; /* Blue */
+}
+
+.quote-card.color-orange .researcher-info::before {
+  background-color: #e67e22; /* Orange */
+}
+
+/* Remove these nth-child selectors that are causing the color to change */
+.quote-card:nth-child(7n + 1) .quote-glow,
+.quote-card:nth-child(7n + 2) .quote-glow,
+.quote-card:nth-child(7n + 3) .quote-glow,
+.quote-card:nth-child(7n + 4) .quote-glow,
+.quote-card:nth-child(7n + 5) .quote-glow,
+.quote-card:nth-child(7n + 6) .quote-glow,
+.quote-card:nth-child(7n + 7) .quote-glow,
+.quote-card:nth-child(7n + 1) .quote-content::before,
+.quote-card:nth-child(7n + 2) .quote-content::before,
+.quote-card:nth-child(7n + 3) .quote-content::before,
+.quote-card:nth-child(7n + 4) .quote-content::before,
+.quote-card:nth-child(7n + 5) .quote-content::before,
+.quote-card:nth-child(7n + 6) .quote-content::before,
+.quote-card:nth-child(7n + 7) .quote-content::before,
+.quote-card:nth-child(7n + 1) blockquote a,
+.quote-card:nth-child(7n + 2) blockquote a,
+.quote-card:nth-child(7n + 3) blockquote a,
+.quote-card:nth-child(7n + 4) blockquote a,
+.quote-card:nth-child(7n + 5) blockquote a,
+.quote-card:nth-child(7n + 6) blockquote a,
+.quote-card:nth-child(7n + 7) blockquote a,
+.quote-card:nth-child(7n + 1) .researcher-info::before,
+.quote-card:nth-child(7n + 2) .researcher-info::before,
+.quote-card:nth-child(7n + 3) .researcher-info::before,
+.quote-card:nth-child(7n + 4) .researcher-info::before,
+.quote-card:nth-child(7n + 5) .researcher-info::before,
+.quote-card:nth-child(7n + 6) .researcher-info::before,
+.quote-card:nth-child(7n + 7) .researcher-info::before {
+  /* These selectors are now replaced by class-based selectors */
+}
+
+.quote-content {
+  flex: 1;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.drag-handle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.05);
+  cursor: grab;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.drag-handle:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.drag-handle::before {
+  content: "≡";
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+blockquote {
+  margin: 0 0 1rem 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #34495e;
+  position: relative;
+  padding: 0;
+  border-left: none;
+  z-index: 1;
+  flex: 1;
+  overflow: auto;
+}
+
+/* Quotation mark */
+.quote-content::before {
+  content: '"';
+  font-family: Georgia, serif;
+  font-size: 4rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  line-height: 1;
+  z-index: 0;
+  opacity: 0.1;
+}
+
+blockquote a {
+  color: #3498db;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  border-bottom: 1px dashed rgba(52, 152, 219, 0.5);
+  padding-bottom: 1px;
+  word-break: break-word;
+}
+
+blockquote a:hover {
+  text-decoration: underline;
+}
+
+.researcher-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: auto;
+  position: relative;
+  padding-top: 0.75rem;
+}
+
+.researcher-info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 2px;
+}
+
+cite {
+  font-style: normal;
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 0.9rem;
+  margin-bottom: 0.1rem;
+}
+
+.researcher-title {
+  font-size: 0.8rem;
+  color: #7f8c8d;
+  font-weight: 400;
+}
+
+.anonymous-label {
+  font-size: 0.8rem;
+  color: #7f8c8d;
+  font-weight: 400;
+  font-style: italic;
+}
+
 /* Responsive styles */
 @media (max-width: 1200px) {
-  .pdf-container:not(.additional-flashcards) .pdf-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-
-  .flipcard {
-    width: 200px;
-    height: 300px;
-  }
-
-  .additional-flashcards .flipcard {
-    flex: 0 0 calc(25% - 22.5px);
+  .quotes-masonry {
+    max-width: 900px;
   }
 }
 
 @media (max-width: 992px) {
-  .additional-flashcards .flipcard {
-    flex: 0 0 calc(33.333% - 20px);
-  }
-  .contact-container {
-    flex-direction: column;
-  }
-
-  .contact-column {
-    margin-bottom: 2rem;
+  .quotes-masonry {
+    max-width: 700px;
   }
 }
 
 @media (max-width: 768px) {
-  nav ul {
+  .quotes-masonry {
+    max-width: 500px;
+  }
+
+  .quote-card {
+    width: 100% !important;
+    max-width: 400px;
+    margin: 0 auto 20px;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+  }
+
+  .quotes-masonry {
+    height: auto !important;
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  nav ul li {
-    margin: 0.5rem 0;
+  blockquote {
+    font-size: 0.9rem;
   }
 
-  main {
-    margin: 1rem;
-    padding: 1rem;
+  cite {
+    font-size: 0.85rem;
   }
 
-  .pdf-container:not(.additional-flashcards) .pdf-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-
-  .flipcard {
-    width: 150px;
-    height: 225px;
-  }
-
-  .flipcard-front {
-    font-size: 3rem;
-  }
-
-  .additional-flashcards .flipcard {
-    flex: 0 0 calc(50% - 15px);
-    width: 156px;
-    height: 208px;
-  }
-
-  .additional-flashcards .flipcard-front {
-    font-size: 2rem;
-  }
-
-  .enlarge-btn {
-    font-size: 0.8rem;
-  }
-
-  .modal-content {
-    width: 95%;
-    height: 90%;
-    margin: 2% auto;
-  }
-  .social-links li {
-    flex: 1 0 100%;
+  .researcher-title,
+  .anonymous-label {
+    font-size: 0.75rem;
   }
 }
 
 @media (max-width: 480px) {
-  .additional-flashcards .flipcard {
-    flex: 0 0 100%;
-    max-width: 195px;
-    margin-left: auto;
-    margin-right: auto;
+  .quote-card {
+    max-width: 100%;
   }
+
+  .quote-content {
+    padding: 1.2rem 1rem;
+  }
+
+  .quote-content::before {
+    font-size: 3rem;
+  }
+}
+
+/* Expanded state for mobile */
+@media (max-width: 768px) {
+  .quote-card.expanded {
+    z-index: 100;
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Indicate cards are clickable on mobile */
+  .quote-card::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: block;
+  }
+
+  .quote-card.expanded::after {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+/* Loose but tight packing styles */
+.quotes-masonry {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.quote-card {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.quote-card:hover {
+  transform: translateY(-5px) rotate(0.5deg);
+}
+
+/* Add subtle rotation to cards for organic feel */
+.quote-card:nth-child(odd) {
+  transform: rotate(-0.5deg);
+}
+
+.quote-card:nth-child(even) {
+  transform: rotate(0.5deg);
+}
+
+.quote-card:nth-child(3n) {
+  transform: rotate(0.2deg);
+}
+
+.quote-card:nth-child(3n + 1) {
+  transform: rotate(-0.2deg);
+}
+
+/* Override rotation on hover */
+.quote-card:hover {
+  transform: translateY(-5px) rotate(0deg);
 }
 
